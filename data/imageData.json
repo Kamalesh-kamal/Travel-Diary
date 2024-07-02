@@ -1,0 +1,59 @@
+{
+  "imageData": [
+    {
+      "id": "01",
+      "img": "https://daijiworld.ap-south-1.linodeobjects.com/iWeb/daijiworld/images3/allwyn_050721_worship1.jpg",
+      "type": "Holy Shrines"
+    },
+    {
+      "id": "02",
+      "img": "https://vietnam.travel/sites/default/files/inline-images/shutterstock_292242137.jpg",
+      "type": "Beach"
+    },
+    {
+      "id": "03",
+      "img": "https://www.tamilnadutourism.tn.gov.in/img/pages/medium-desktop/avalanche-lake-ooty-1656163322_accba7f88c9902134278.webp",
+      "type": "Hill Station"
+    },
+    {
+      "id": "04",
+      "img": "https://www.tripsavvy.com/thmb/UjTIe0jl_mpF2E14pEAI0cBVVvY=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-522478216-5ab12c4e3de4230036949cee.jpg",
+      "type": "Hill Station"
+    },
+    {
+      "id": "05",
+      "img": "https://curlytales.com/wp-content/uploads/2019/11/Gulmarg-Go-Missing-FB.jpg",
+      "type": "Snow Hill Station"
+    },
+    {
+      "id": "06",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Male_whale_shark_at_Georgia_Aquarium.jpg/330px-Male_whale_shark_at_Georgia_Aquarium.jpg",
+      "type": "Aquarium"
+    },
+    {
+      "id": "07",
+      "img": "https://www.travelandleisure.com/thmb/Qa7_o8_XVpIVH5vqq7i73UlTSkU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg",
+      "type": "Tower"
+    },
+    {
+      "id": "08",
+      "img": "https://www.godigit.com/content/dam/godigit/directportal/en/contenthm/imagica-adlabs.jpg",
+      "type": "Theme Park"
+    },
+    {
+      "id": "09",
+      "img": "https://static3.depositphotos.com/1005741/201/i/450/depositphotos_2019324-stock-photo-lush-garden-in-spring.jpg",
+      "type": "Garden&Parks"
+    },
+    {
+      "id": "10",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Tinuy-an_Falls%2C_Bislig_City%2C_Philippines.jpg/330px-Tinuy-an_Falls%2C_Bislig_City%2C_Philippines.jpg",
+      "type": "WaterFalls"
+    },
+    {
+      "id": "11",
+      "img": "https://www.trawell.in/blog/wp-content/uploads/2021/02/Needle_Rock_Hillpoint_Main.jpg",
+      "type": "ViewPoints"
+    }
+  ]
+}

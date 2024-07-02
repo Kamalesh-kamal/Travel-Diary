@@ -1,0 +1,163 @@
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+
+.map {
+  transform: translate(-5%, -6%);
+  height: 31rem;
+  margin: 0 20px;
+  border-radius: 20px;
+  width: 50rem;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.cancel-logo {
+  position: absolute;
+  right: 120px;
+  top: 10px;
+}
+
+.cancel {
+}
+
+.formDiv {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  /* gap: 20px; */
+  height: 100vh;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 25px 0px 0px 10px;
+  box-shadow: 5px 5px 1px rgba(246, 244, 244, 0.984);
+  /* display: block; */
+  z-index: 30;
+  background: linear-gradient(to top left, #e79720, #f1c149, #eed58e);
+  color: #fff;
+  /* backdrop-filter: blur(2px); */
+}
+
+.noForm {
+  display: none;
+}
+
+.modal {
+  width: 80rem;
+  height: 100vh;
+  position: absolute;
+  /* transform: translate(50%,50%); */
+  top: 0px;
+  left: 0px;
+  backdrop-filter: blur(2px);
+  color: black;
+  /* background-color: #75caf7; */
+  z-index: 10;
+}
+
+.hiddenModal {
+  display: none;
+}
+
+label {
+  width: 4rem;
+  display: inline-block;
+}
+
+.mobileNav {
+  position: relative;
+  z-index: 20;
+  background: #75caf7;
+  /* padding: 5px; */
+}
+
+.divNav {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-right: 10px;
+}
+.hiddenNav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: center;
+  gap: 40px;
+}
+
+.listDiv {
+  display: block;
+}
+.listNone {
+  display: none;
+}
+
+.mobileList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 13px;
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  gap: 50px;
+  height: 45rem;
+  width: 23rem;
+  background: linear-gradient(to top left, #e79720, #f1c149, #eed58e);
+  color: #fff;
+  z-index: 20;
+}
+.lapList {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  border-radius: 20px;
+  gap: 50px;
+  height: 28rem;
+  background: linear-gradient(to top left, #e79720, #f1c149, #eed58e);
+  color: #fff;
+  /* z-index: 20; */
+}
+
+@media (min-width: 320px) {
+  .map {
+    position: absolute;
+    top: 4rem;
+    /* left: 1.5rem; */
+    height: 90svh;
+    width: 95%;
+    border-radius: 20px;
+    z-index: -10;
+    /* position: ; */
+  }
+  .listDiv {
+    z-index: 40;
+  }
+  .modal {
+    width: 25rem;
+    height: 50rem;
+  }
+
+  .formDiv {
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+    /* position: absolute; */
+    /* left: 190px; */
+  }
+}
+
+@media (min-width: 700px) {
+  .formDiv {
+    /* position:absolute; */
+    width: 30%;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 18rem;
+    left: 14rem;
+  }
+  .map {
+    /* position:absolute; */
+    top: 0px;
+    height: 85vh;
+  }
+}
