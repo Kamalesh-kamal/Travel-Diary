@@ -30,6 +30,7 @@ const Frm = styled.div`
     justify-content: center;
     align-items: start;
     gap: 20px;
+    z-index:40;
   }
   @media (min-width: 700px) {
     display: flex;
@@ -162,7 +163,6 @@ function Forms() {
 
   const handlePhotoChange = (e) => {
     const file = e.target.value;
-    // console.log(file);
     const selectedFile = img.find((itm) => itm.id === file);
     console.log(selectedFile);
     const imgUrl = selectedFile.img;
@@ -175,11 +175,9 @@ function Forms() {
     e.preventDefault();
     dispatch(addItem({ place, photo, summary, lat, lng, date, visitedPlace }));
     console.log(place, photo, summary, date, visitedPlace);
-    // FormDiv.style.display = "hidden";
+  
     setSummary("");
-    // setPhoto("");
     setPlace("");
-    // setDate("");
     setVisitedPlace("");
   };
 

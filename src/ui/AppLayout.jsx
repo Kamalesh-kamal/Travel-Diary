@@ -1,12 +1,11 @@
 import { Outlet } from "react-router";
-import Footer from "./Footer";
+import { ModalProvider } from "../context/ModalContext";
 
 function AppLayout() {
   return (
-    <>
+    <ModalProvider>
       <Outlet />
-      <Footer />
-    </>
+    </ModalProvider>
   );
 }
 

@@ -127,12 +127,12 @@ const HomeButton = styled.button`
     bottom: 1rem;
     font-size: 15px;
 
-    &:hover {
+    /* &:hover {
       color: #dee7e0;
       font-size: 20px;
       box-shadow: 2px 3px 5px rgba(246, 244, 244, 0.984);
       cursor: pointer;
-    }
+    } */
   }
   @media (min-width: 1024px) {
     background: linear-gradient(to top left, #eb9d27, #fadc8f);

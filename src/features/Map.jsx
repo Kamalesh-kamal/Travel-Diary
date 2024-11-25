@@ -28,6 +28,7 @@ const Page = styled.div`
     width: 100%;
     gap: 10px;
     /* background-color: blue; */
+    z-index: 10;
   }
 `;
 
@@ -41,6 +42,9 @@ const Page = styled.div`
 // `;
 
 const MapDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media (min-width: 320px) {
     /* border: 2px solid black; */
     /* background-color: #1f1f1f; */
@@ -60,7 +64,7 @@ const MapDiv = styled.div`
     top: 3rem;
     transform: translateX(60%);
     /* background-color: black; */
-    z-index: 0;
+    z-index: -2;
   }
 `;
 
@@ -71,12 +75,12 @@ const SearchText = styled.div`
     /* background:red; */
     border: 2px solid black;
     border: none;
-    position: absolute;
-    top: 60px;
-    left: 3.5rem;
+    /* position: absolute;
+    top: 6rem;
+    left: 5rem; */
     width: 15rem;
     padding: 0px 6px;
-    /* z-index: -1; */
+    /* z-index: 10; */
   }
 
   @media (min-width: 700px) {
@@ -87,7 +91,7 @@ const SearchText = styled.div`
     height: auto;
     align-items: center;
     left: 45rem;
-    top: 7rem;
+    top: 5rem;
     padding-top: 2rem;
     padding-left: 1rem;
     /* z-index: -10; */
@@ -211,24 +215,6 @@ const ItmDiv = styled.div`
   z-index: 10;
 `;
 
-const Move = styled.div`
-  @media (min-width: 320px) {
-    display: none;
-  }
-  @media (min-width: 700px) {
-    display: inline-block;
-  }
-`;
-
-const H1 = styled.h4`
-  background: linear-gradient(to top left, #eb9d27, #fadc8f);
-  color: #fff;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 75px;
-  padding: 0px 5px;
-`;
-
 function Map() {
   // getting lat and lng using search params
   const [searchParams] = useSearchParams();
@@ -276,40 +262,35 @@ function Map() {
       <ItmDiv>
         <ListMob>
           <ListBtn onClick={handleShowList}>
-            {showList ? "Go to Map" : "Your Journey"}
+            {showList ? "Go to Map" : "Go to Journey"}
           </ListBtn>
           <div className={showList ? "listDiv" : "listNone"}>
             <List className="mobileList" handleSearch={handleSearch} />
           </div>
         </ListMob>
-
-        <ListLap>
-          <LapListBtn>Your Journey</LapListBtn>
-          <List className="lapList" />
-        </ListLap>
-        <div className={showForm ? "formDiv" : "noForm"}>
-          <FormCancel>
-            <CancelButton
-              onClick={() => {
-                setShowForm(false);
-              }}
-            >
-              x
-            </CancelButton>
-          </FormCancel>
-          <Forms />
-        </div>
-        {showSearch && (
-          <SearchText>
-            <SearchOutput />
-          </SearchText>
-        )}
       </ItmDiv>
+      <div className={showForm ? "formDiv" : "noForm"}>
+        <FormCancel>
+          <CancelButton
+            onClick={() => {
+              setShowForm(false);
+            }}
+          >
+            x
+          </CancelButton>
+        </FormCancel>
+        <Forms />
+      </div>
+
       <MapDiv onClick={handleShowForm}>
+        <div>
+          {showSearch && (
+            <SearchText>
+              <SearchOutput />
+            </SearchText>
+          )}
+        </div>
         {/* <PosButton>get location</PosButton> */}
-        <Move>
-          <H1>use ⬆️⬇️⬅️➡️ to move around in the map</H1>
-        </Move>
         <MapContainer
           center={[lat, lng]}
           zoom={16}

@@ -6,11 +6,11 @@ import ListItem from "./ListItem";
 
 function List({ className }) {
   return (
-    <>
+    <div className="ListDiv">
       <div className={className}>
-        <ListItem  />
+        <ListItem />
       </div>
-    </>
+    </div>
   );
 }
 
